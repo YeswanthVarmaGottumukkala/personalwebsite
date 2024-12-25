@@ -1,0 +1,330 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    position: absolute; /* Position the header within the hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* Ensure header content is on top of the image */
+    background-color: transparent; /* Make the background transparent */
+    background-image: none; /* Remove any background image behind the header */
+    transition: transform 0.3s ease, top 0.3s ease; /* Smooth transition for scrolling effect */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff; /* Ensure the logo is visible on top of the background */
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px; /* Added padding for spacing */
+    border: 2px solid transparent; /* Border added for effect */
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    border-color: #fff; /* White border on hover */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('file:///C:/Users/yeswanth/Downloads/abstract-background-design-hd-beauty-green-color_851755-56816-transformed.jpeg') no-repeat center center/cover;
+    color: #fff;
+    height: 50vh; /* Half the screen height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0; /* Ensure the image starts at the top of the page */
+    overflow: hidden; /* Ensure nothing overflows the container */
+}
+
+/* White Background Section */
+.white-section {
+    background-color: #fff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.white-section h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.white-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-group a {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.button-group .talk-button {
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-group .talk-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.button-group .services-button {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+}
+
+.button-group .services-button:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Services Header */
+.services-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 0; /* Changed from 60px to 0 to ensure it's not pushed too far down */
+}
+
+.services-header h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.services-header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    gap: 3px; /* Thin gap between cards */
+    justify-content: center;
+}
+
+.services-card {
+    flex: 1;
+    border-radius: 12px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.8s ease; /* Slower pop effect */
+    height: 400px; /* Adjusted card height to make them longer */
+}
+
+.services-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Subtle pop effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-card:nth-child(1) {
+    border: 2px solid #4caf50;
+    background: #eaf7ea;
+    width: 480px; /* Slightly wider first card */
+}
+
+.services-card:nth-child(2) {
+    background: #333;
+    color: #fff;
+    width: 380px; /* Reduced width for second card */
+}
+
+.services-card:nth-child(3) {
+    border: 2px solid #003d33;
+    background: #e0f2f1;
+    width: 380px; /* Reduced width for third card */
+}
+
+/* Services Card Header */
+.services-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4caf50;
+    padding: 6px 10px;
+    border-radius: 50%;
+    border: 1px solid #4caf50;
+}
+
+.services-card h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.services-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Services List */
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Thin gap between buttons */
+    width: 100%;
+}
+
+.services-list a {
+    display: block;
+    width: 100%; /* Full width of the container */
+    text-align: center;
+    padding: 12px 0; /* Adjusted padding */
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted font size */
+    line-height: 16px; /* Adjusted line height */
+    transition: transform 0.2s;
+    background-color: #3898ec00; /* Transparent background */
+}
+
+.services-list a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); /* Subtle lift effect for buttons */
+}
+
+/* For the first card, buttons are displayed in two rows */
+.services-card:nth-child(1) .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two buttons per row */
+    gap: 5px; /* Thin gap between buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 991px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 20px;
+    }
+    .services-list a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .white-section h2 {
+        font-size: 24px;
+    }
+    .white-section p {
+        font-size: 16px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta-button {
+        align-self: center;
+    }
+}
+
+/* JavaScript Scroll Behavior */
+
+/* The header will scroll off along with the hero image */
