@@ -23,12 +23,7 @@ This page highlights the core services I offer, including autonomous agent devel
 ### AI Page
 The AI Page dives deeper into my artificial intelligence services. It showcases the value and impact of AI-driven solutions such as workflow automation, natural language processing, and other AI applications.
 
-![AI Page Preview](images/ai-preview.png)
-
-### About Us Page
-The About Us Page provides an in-depth look at the processes, values, and strategies employed by my company to ensure maximum efficiency in delivering high-quality services.
-
-![About Us Page Preview](images/eff-preview.png)
+![About Us Page Preview]({31E74B7D-CA74-46F1-9BEF-25D1EA2E80AB}.png)
 
 ### Service Details Page
 This page discusses the specific services in more detail, providing case studies, success stories, and the impact of the services offered to clients.
