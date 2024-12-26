@@ -188,11 +188,11 @@
 
             // Move content boxes
             const translateX = -scrollProgress;
-            scrollContainer.style.transform = translateX(${translateX}px);
+            scrollContainer.style.transform = `translateX(${translateX}px)`;
 
             // Move background image in the opposite direction
             const backgroundTranslate = scrollProgress * 0.1; // Background moves slower
-            document.body.style.backgroundPosition = center ${-backgroundTranslate}px;
+            document.body.style.backgroundPosition = `center ${-backgroundTranslate}px`;
 
             // Highlight the flowchart step when a content box is in position
             const index = Math.round(scrollProgress / contentWidth);
