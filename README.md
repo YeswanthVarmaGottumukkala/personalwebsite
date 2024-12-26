@@ -13,7 +13,7 @@ Welcome to my personal website! This website is a showcase of my work and skills
 ### Home Page
 The Home Page serves as the main landing page, offering an introduction to my website, key services, and a brief overview of what my company offers.
 
-![Home Page Preview](images/home-preview.png)
+![Home Page Preview]({3DCAEE10-8CC3-4426-9457-4844C4E5348F}.png)
 
 ### Services Overview Page
 This page highlights the core services I offer, including autonomous agent development, enterprise consulting, and chatbot development. It gives visitors a brief overview of the services that can be explored further.
