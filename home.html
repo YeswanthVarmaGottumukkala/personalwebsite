@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Innovators</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    }
+    body, html {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header Styles */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.5); /* Added background color for better contrast */
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 20px; /* Added padding for spacing */
+      border: 2px solid transparent; /* Border added for effect */
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      border-color: #fff; /* White border on hover */
+    }
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #4caf50;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('file:///C:/Users/yeswanth/Downloads/abstract-background-design-hd-beauty-green-color_851755-56816-transformed.jpeg') no-repeat center center/cover;
+      color: #fff;
+      height: 60vh; /* Adjusted for better visibility */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* White Background Section */
+    .white-section {
+      background-color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .white-section h2 {
+      font-size: 32px;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .white-section p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    }
+    .button-group a {
+      padding: 15px 25px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+    .button-group .talk-button {
+      background-color: #4caf50;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button-group .talk-button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+    .button-group .services-button {
+      background-color: transparent;
+      border: 2px solid #4caf50;
+      color: #4caf50;
+    }
+    .button-group .services-button:hover {
+      background-color: #4caf50;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .hero {
+        height: 50vh; /* Reduced hero height for mobile */
+      }
+      .hero h1 {
+        font-size: 28px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .white-section h2 {
+        font-size: 28px;
+      }
+      .white-section p {
+        font-size: 16px;
+      }
+      .button-group a {
+        font-size: 14px;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">AI Innovators</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a> <!-- Added About Us -->
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <!-- No additional text, only logo and buttons -->
+  </div>
+
+  <!-- White Background Section -->
+  <div class="white-section">
+    <h2>Breathe Life into Your Systems with Cutting-Edge AI Solutions</h2>
+    <p>Transform your business with innovative AI tools and strategies.</p>
+    <div class="button-group">
+      <a href="#contact" class="talk-button">Let's Talk</a>
+      <a href="#services" class="services-button">Our Services</a>
+    </div>
+  </div>
+</body>
+</html>

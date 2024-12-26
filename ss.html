@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    h1, h3 {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    .services-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services-header h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #333;
+    }
+    .services-header p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    /* Services section */
+    .services-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .services-card {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: #ececec; /* Updated to match home page background color */
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      z-index: 1;
+    }
+    /* Removed hover effect to ensure size remains when clicked */
+    .services-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .services-card h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Hashtag and number */
+    .services-card span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      color: #ddd; /* Set color to blend with the background */
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Active card effect */
+    .services-card.active {
+      transform: scale(1.1); /* Pop-out effect (larger size) */
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    /* Service list section */
+    .service-buttons {
+      display: none;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .service-buttons a {
+      padding: 8px 15px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 12px; /* Reduced font size */
+      transition: background-color 0.3s, color 0.3s;
+      border: 1px solid #ddd;
+      display: inline-block;
+    }
+    .service-buttons a:hover {
+      background-color: #f1f1f1;
+    }
+    .service-buttons a.active {
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #333;
+    }
+
+    .service-description {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .service-description p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 991px) {
+      .services-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .services-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 20px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .services-grid {
+        justify-content: center; /* Center the items */
+        gap: 15px; /* Smaller gap between cards */
+      }
+      .services-card {
+        width: 80%; /* Cards occupy more space on smaller screens */
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="services-header">
+      <h1>Morningside AI <span style="color: #4caf50;">Services</span></h1>
+      <p>Our news and media information</p>
+    </header>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+      <!-- Card 1 (Click to reveal service buttons) -->
+      <div class="services-card" id="service1" onclick="toggleService('service1')">
+        <span>#1</span>
+        <h3>AUTONOMOUS AGENT DEVELOPMENT</h3>
+      </div>
+
+      <!-- Card 2 (Click to reveal service buttons) -->
+      <div class="services-card" id="service2" onclick="toggleService('service2')">
+        <span>#2</span>
+        <h3>ENTERPRISE CONSULTING</h3>
+      </div>
+
+      <!-- Card 3 (Click to reveal service buttons) -->
+      <div class="services-card" id="service3" onclick="toggleService('service3')">
+        <span>#3</span>
+        <h3>CHATBOT DEVELOPMENT</h3>
+      </div>
+    </div>
+
+    <!-- Service Buttons Section -->
+    <div class="service-buttons" id="service1-buttons">
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc1')" class="active">Workflow Automation</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc2')">Natural Language to SQL</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc3')">Complex Data Pipelines</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc4')">Self-Adaptive Decision Systems</a>
+    </div>
+
+    <div class="service-buttons" id="service2-buttons">
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc5')">Strategy Development</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc6')">Performance Evaluation</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc7')">Use Case Identification</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc8')">Feasibility Assessments</a>
+    </div>
+
+    <div class="service-buttons" id="service3-buttons">
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc9')">Workflow Automation</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc10')">Natural Language to SQL</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc11')">Complex Data Pipelines</a>
+      <a href="#" onclick="toggleActiveButton(this); showDescription('desc12')">Self-Adaptive Systems</a>
+    </div>
+
+    <!-- Service Descriptions -->
+    <div id="desc1" class="service-description" style="display: block;">
+      <p>Workflow Automation involves streamlining business processes using intelligent systems that can learn and adapt.</p>
+    </div>
+    <div id="desc2" class="service-description">
+      <p>Natural Language to SQL enables users to convert natural language queries into SQL statements for easy database access.</p>
+    </div>
+    <div id="desc3" class="service-description">
+      <p>Complex Data Pipelines enable efficient data processing and transformation across various systems and platforms.</p>
+    </div>
+    <div id="desc4" class="service-description">
+      <p>Self-Adaptive Decision Systems allow systems to make data-driven decisions autonomously, adapting to changing conditions.</p>
+    </div>
+    <div id="desc5" class="service-description">
+      <p>Strategy Development involves creating tailored strategies for clients to achieve sustainable growth and success.</p>
+    </div>
+    <div id="desc6" class="service-description">
+      <p>Performance Evaluation assesses the effectiveness of business strategies and operational efficiencies.</p>
+    </div>
+    <div id="desc7" class="service-description">
+      <p>Use Case Identification helps clients identify critical areas for automation and optimization in their operations.</p>
+    </div>
+    <div id="desc8" class="service-description">
+      <p>Feasibility Assessments evaluate the practicality and potential success of proposed business initiatives.</p>
+    </div>
+    <div id="desc9" class="service-description">
+      <p>Workflow Automation helps streamline repetitive tasks and improve efficiency in everyday operations.</p>
+    </div>
+    <div id="desc10" class="service-description">
+      <p>Natural Language to SQL enables easy database query execution using human language commands.</p>
+    </div>
+    <div id="desc11" class="service-description">
+      <p>Complex Data Pipelines enable businesses to process vast amounts of data in real-time for actionable insights.</p>
+    </div>
+    <div id="desc12" class="service-description">
+      <p>Self-Adaptive Systems empower businesses to make intelligent decisions without constant manual intervention.</p>
+    </div>
+  </div>
+
+  <script>
+    var currentActiveCard = null; // Track currently selected card
+
+    // Function to toggle visibility of service buttons for a specific service
+    function toggleService(serviceId) {
+      var selectedCard = document.getElementById(serviceId);
+
+      // Only change the state if the card clicked is different from the current active card
+      if (currentActiveCard && currentActiveCard !== selectedCard) {
+        currentActiveCard.classList.remove('active');
+      }
+
+      selectedCard.classList.toggle('active');
+      currentActiveCard = selectedCard;
+
+      // Toggle the visibility of the service buttons
+      var allButtonSections = document.querySelectorAll('.service-buttons');
+      allButtonSections.forEach(function(section) {
+        section.style.display = 'none';
+      });
+
+      var selectedButtons = document.getElementById(serviceId + '-buttons');
+      selectedButtons.style.display = 'flex'; // Show the service buttons for clicked service
+    }
+
+    // Function to toggle active class for buttons (click effect)
+    function toggleActiveButton(button) {
+      var buttons = document.querySelectorAll('.service-buttons a');
+      buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    }
+
+    // Function to show description for the clicked button
+    function showDescription(descriptionId) {
+      var allDescriptions = document.querySelectorAll('.service-description');
+      allDescriptions.forEach(function(desc) {
+        desc.style.display = 'none';
+      });
+
+      var description = document.getElementById(descriptionId);
+      description.style.display = 'block';
+    }
+
+    // On page load, show the first service's buttons and description
+    window.onload = function() {
+      document.getElementById('service1-buttons').style.display = 'flex';
+      var firstButton = document.querySelector('#service1-buttons a');
+      firstButton.classList.add('active');
+      document.getElementById('desc1').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
