@@ -1,50 +1,51 @@
-# personalwebsite
 # Personal Website
 
-Welcome to my personal website! This website is a showcase of my work and my skills in UI/UX design and web development. I designed the layout and user experience in Figma before translating it into a fully functional website using HTML, CSS, and JavaScript. The website contains several pages, each focusing on different aspects of the services I offer, as well as information about my company and its processes.
+Welcome to my personal website! This website is a showcase of my work and skills in UI/UX design and web development. I designed the layout and user experience in Figma before translating it into a fully functional website using HTML, CSS, and JavaScript. The website contains several pages, each focusing on different aspects of the services I offer, as well as information about my company and its processes.
 
 ## Live Pages
 - [Home Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/home.html)
-- [Services Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/service.html)
+- [Services Overview Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/service.html)
 - [AI Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/ai.html)
-- [Efficiency Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/eff.html)
-- [SS Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/ss.html)
+- [About Us Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/eff.html)
+- [Service Details Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/ss.html)
 
 ## Page Previews
 
 ### Home Page
-The Home Page is the main landing page of the website, offering an overview of my services, company values, and an introduction to the offerings. It serves as the main gateway to exploring the rest of the site.
+The Home Page serves as the main landing page, offering an introduction to my website, key services, and a brief overview of what my company offers.
 
 ![Home Page Preview](images/home-preview.png)
 
-### Services Page
-The Services Page highlights the range of services I offer, including autonomous agent development, enterprise consulting, and chatbot development. This page provides visitors with a brief but comprehensive look at the key services.
+### Services Overview Page
+This page highlights the core services I offer, including autonomous agent development, enterprise consulting, and chatbot development. It gives visitors a brief overview of the services that can be explored further.
 
-![Services Page Preview](images/services-preview.png)
+![Services Overview Page Preview](images/services-preview.png)
 
 ### AI Page
-The AI Page dives deeper into the artificial intelligence services I provide. It explains the value and benefits of AI applications such as workflow automation and natural language processing.
+The AI Page dives deeper into my artificial intelligence services. It showcases the value and impact of AI-driven solutions such as workflow automation, natural language processing, and other AI applications.
 
 ![AI Page Preview](images/ai-preview.png)
 
-### Efficiency Page
-The Efficiency Page provides an in-depth look at the processes and strategies employed by the company to ensure maximum efficiency in delivering high-quality services.
+### About Us Page
+The About Us Page provides an in-depth look at the processes, values, and strategies employed by my company to ensure maximum efficiency in delivering high-quality services.
 
-![Efficiency Page Preview](images/eff-preview.png)
+![About Us Page Preview](images/eff-preview.png)
 
-### SS Page
-The SS Page discusses case studies and success stories from various projects, highlighting the impact and results of my work.
+### Service Details Page
+This page discusses the specific services in more detail, providing case studies, success stories, and the impact of the services offered to clients.
 
-![SS Page Preview](images/ss-preview.png)
+![Service Details Page Preview](images/ss-preview.png)
 
 ## Features and Highlights
 
-- **Designed in Figma**: Before building the website, I carefully crafted the design in Figma, ensuring that the layout, colors, typography, and overall user experience were consistent and professional.
-  
-- **Interactive UI/UX Design**: The website's design is centered around user engagement. The interactive features, such as clickable service cards that expand to reveal more information, provide a smooth and engaging experience for users.
-  
-- **Service Cards**: The services section showcases various offerings in a card layout. Each service card is clickable, revealing more details about the services offered in an engaging and dynamic way.
-  
-- **Clear Navigation**: The website uses a simple and intuitive navigation structure, making it easy for users to find what they need quickly and efficiently.
+- **Designed in Figma**: I initially designed the website layout in Figma, paying close attention to the visual design and user experience. The Figma designs were then converted into HTML, CSS, and JavaScript to bring the site to life.
 
-Feel free to explore each page, and don't hesitate to reach out if you have any questions or feedback!
+- **Interactive UI/UX Design**: The website's design is built with interactivity in mind. Clickable service cards, dynamic transitions, and a smooth browsing experience all contribute to a polished, user-friendly design.
+
+- **Clear Service Structure**: The website features a well-organized structure where visitors can quickly navigate between different service offerings, company details, and case studies.
+
+- **User Engagement**: Features like service cards that expand to reveal more details ensure an engaging experience that invites users to explore the services and company more deeply.
+
+- **Professional Aesthetic**: The design maintains a modern, clean, and professional aesthetic, focusing on clear typography, simple navigation, and balanced visuals.
+
+Feel free to explore the pages of the website and see how my design and development skills have come together to create a seamless, interactive experience.
