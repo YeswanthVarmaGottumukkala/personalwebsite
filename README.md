@@ -4,7 +4,7 @@ Welcome to my personal website! This website is a showcase of my work and skills
 
 ## Live Pages
 - [Home Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/home.html)
-- [Services Overview Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/service.html)
+- [Services Overview Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/ai.html)
 - [About Us Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/eff.html)
 - [Service Details Page](https://yeswanthvarmagottumukkala.github.io/personalwebsite/ss.html)
 
