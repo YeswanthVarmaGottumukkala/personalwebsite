@@ -18,17 +18,13 @@ The Home Page serves as the main landing page, offering an introduction to my we
 ### Services Overview Page
 This page highlights the core services I offer, including autonomous agent development, enterprise consulting, and chatbot development. It gives visitors a brief overview of the services that can be explored further.
 
-![Services Overview Page Preview](images/services-preview.png)
+![Services Overview Page Preview]({720B3120-9B9C-435A-A4CA-C35EAC8DC381}.png)
 
 ### AI Page
 The AI Page dives deeper into my artificial intelligence services. It showcases the value and impact of AI-driven solutions such as workflow automation, natural language processing, and other AI applications.
 
 ![About Us Page Preview]({31E74B7D-CA74-46F1-9BEF-25D1EA2E80AB}.png)
 
-### Service Details Page
-This page discusses the specific services in more detail, providing case studies, success stories, and the impact of the services offered to clients.
-
-![Service Details Page Preview](images/ss-preview.png)
 
 ## Features and Highlights
 
