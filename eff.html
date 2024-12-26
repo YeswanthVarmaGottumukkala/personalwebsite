@@ -17,7 +17,7 @@
 
         /* Body Styling */
         body {
-            font-family: 'Roboto', sans-serif; /* Changed to Roboto font */
+            font-family: 'Roboto', sans-serif;
             background-color: #000;
             color: #fff;
             overflow: hidden;
@@ -40,7 +40,7 @@
         .title-section h1 {
             font-size: 4rem;
             font-weight: bold;
-            margin-bottom: 20px; /* Added spacing below the title */
+            margin-bottom: 20px;
             letter-spacing: 2px;
         }
 
@@ -53,7 +53,7 @@
         .flowchart-container {
             display: flex;
             align-items: center;
-            margin: 80px auto; /* Added vertical spacing */
+            margin: 80px auto;
             width: 100%;
             padding-left: 8%;
             position: relative;
@@ -96,9 +96,9 @@
         /* Scrollable Content Box Container */
         .scroll-container {
             display: flex;
-            gap: 40px; /* Spacing between content boxes */
+            gap: 40px;
             padding-left: 8%;
-            margin-top: 50px; /* Spacing above content boxes */
+            margin-top: 50px;
             transition: transform 0.5s ease-out;
             width: 100%;
         }
@@ -106,26 +106,43 @@
         /* Content Box Styling */
         .content-box {
             flex: 0 0 40%;
-            height: 200px; /* Increased box height for balance */
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-            border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 15px;
             padding: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             text-align: left;
             line-height: 1.6;
-            color: #fff; /* White text */
+            color: #fff;
         }
 
         .content-box h3 {
-            font-size: 1.8rem; /* Slightly larger heading size */
+            font-size: 1.8rem;
             margin-bottom: 15px;
-            color: #fff; /* White text for headings */
         }
 
         .content-box p {
-            color: #fff; /* White text for paragraph */
             font-size: 1.2rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .flowchart-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .scroll-container {
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+            }
+
+            .content-box {
+                flex: 0 0 80%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -174,27 +191,22 @@
         const flowchartItems = document.querySelectorAll(".flowchart-item");
         const contentBoxes = document.querySelectorAll(".content-box");
 
-        let scrollProgress = 0; // Accumulated scroll value
-        const stepSize = 200; // Pixels for each scroll movement
-        const contentWidth = contentBoxes[0].offsetWidth + 40; // Total width of a single content box including gap
+        let scrollProgress = 0; 
+        const stepSize = 200; 
+        const contentWidth = contentBoxes[0].offsetWidth + 40; 
 
         window.addEventListener("wheel", (event) => {
-            // Update scroll progress
             scrollProgress += event.deltaY;
 
-            // Ensure scroll stays within bounds
             const maxScroll = (contentBoxes.length - 1) * contentWidth;
             scrollProgress = Math.max(0, Math.min(scrollProgress, maxScroll));
 
-            // Move content boxes
             const translateX = -scrollProgress;
             scrollContainer.style.transform = `translateX(${translateX}px)`;
 
-            // Move background image in the opposite direction
-            const backgroundTranslate = scrollProgress * 0.1; // Background moves slower
+            const backgroundTranslate = scrollProgress * 0.1; 
             document.body.style.backgroundPosition = `center ${-backgroundTranslate}px`;
 
-            // Highlight the flowchart step when a content box is in position
             const index = Math.round(scrollProgress / contentWidth);
             flowchartItems.forEach((item, i) => {
                 item.classList.toggle("active", i === index);
